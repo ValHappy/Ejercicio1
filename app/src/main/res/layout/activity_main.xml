@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#106fb7"
+    tools:context=".MainActivity">
+
+    <Button
+        android:id="@+id/btn_main_calcular"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="35dp"
+        android:layout_marginEnd="59dp"
+        android:layout_marginStart="59dp"
+
+        android:background="#005491"
+        android:text="@string/btn_main_calcular"
+        android:textColor="#ffffff"
+        app:layout_constraintBottom_toTopOf="@+id/tv_main_resultado"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_main_introduce" />
+
+    <EditText
+        android:id="@+id/edt_main_masa"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="10dp"
+        android:layout_marginEnd="56dp"
+        android:layout_marginStart="56dp"
+        android:background="#005491"
+        android:ems="10"
+        android:hint="@string/edt_main_masa"
+
+        android:inputType="textPersonName|numberDecimal"
+        android:padding="9dp"
+        android:textColor="#ffffff"
+        app:layout_constraintBottom_toTopOf="@+id/edt_main_altura"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView" />
+
+    <EditText
+        android:id="@+id/edt_main_altura"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="23dp"
+        android:layout_marginEnd="56dp"
+        android:layout_marginStart="56dp"
+        android:background="#005491"
+        android:ems="10"
+        android:hint="@string/edt_main_altura"
+
+        android:inputType="textPersonName|numberDecimal"
+        android:padding="9dp"
+        android:textColor="#ffffff"
+        app:layout_constraintBottom_toTopOf="@+id/tv_main_introduce"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/edt_main_masa" />
+
+    <TextView
+        android:id="@+id/tv_main_introduce"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:layout_marginEnd="8dp"
+        android:text="@string/tv_main_introduce"
+        android:textColor="#ffffff"
+        app:layout_constraintBottom_toTopOf="@+id/btn_main_calcular"
+        app:layout_constraintEnd_toEndOf="@+id/btn_main_calcular"
+        app:layout_constraintTop_toBottomOf="@+id/edt_main_altura" />
+
+    <TextView
+        android:id="@+id/tv_main_resultado"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:layout_marginStart="6dp"
+        android:text="@string/tv_main_resultado"
+
+        android:textColor="#ffffff"
+        app:layout_constraintBottom_toTopOf="@+id/tv_main_result"
+        app:layout_constraintStart_toStartOf="@+id/tv_main_result"
+        app:layout_constraintTop_toBottomOf="@+id/btn_main_calcular" />
+
+    <TextView
+        android:id="@+id/tv_main_result"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="39dp"
+        android:layout_marginEnd="62dp"
+        android:layout_marginStart="62dp"
+
+        android:background="#005491"
+        android:text="@string/tv_main_result"
+        android:textColor="#ffffff"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_main_resultado" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginBottom="27dp"
+
+        android:layout_marginStart="28dp"
+
+        android:layout_marginTop="25dp"
+        android:contentDescription="TODO"
+        android:src="@drawable/thumbnail_logo"
+        app:layout_constraintBottom_toTopOf="@+id/edt_main_masa"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+</android.support.constraint.ConstraintLayout>
